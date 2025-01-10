@@ -12,7 +12,7 @@ namespace SharedCode
         {
             if (args.Length < 2)
             {
-                Console.WriteLine("You must pass as parameters a PNG file and a CONFIG file");
+                Console.WriteLine("You must pass as parameters a PNG file and a CONFIGFNT file");
                 return;
             }
 
@@ -40,24 +40,24 @@ namespace SharedCode
                 pngFileInfo = new FileInfo(args[1]);
             }
 
-            if (Path.GetExtension(args[0].ToLowerInvariant()).Contains("config"))
+            if (Path.GetExtension(args[0].ToLowerInvariant()).Contains("configfnt"))
             {
                 configFileInfo = new FileInfo(args[0]);
             }
-            else if (Path.GetExtension(args[1].ToLowerInvariant()).Contains("config"))
+            else if (Path.GetExtension(args[1].ToLowerInvariant()).Contains("configfnt"))
             {
                 configFileInfo = new FileInfo(args[1]);
             }
 
             if (pngFileInfo == null)
             {
-                Console.WriteLine("The png file path not found.");
+                Console.WriteLine("The PNG path not found.");
                 return;
             }
 
             if (configFileInfo == null)
             {
-                Console.WriteLine("The png config path not found.");
+                Console.WriteLine("The CONFIGFNT path not found.");
                 return;
             }
 
@@ -80,7 +80,7 @@ namespace SharedCode
             }
             catch (Exception)
             {
-                Console.WriteLine("Error loading config file.");
+                Console.WriteLine("Error loading configfnt file.");
                 return;
             }
 

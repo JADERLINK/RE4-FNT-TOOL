@@ -18,7 +18,7 @@ namespace MakeSpriteSheetInfos
             Console.WriteLine("MakeSpriteSheetInfos");
             Console.WriteLine("by: JADERLINK");
             Console.WriteLine("youtube.com/@JADERLINK");
-            Console.WriteLine("Version 1.1 (2025-01-07)");
+            Console.WriteLine("Version 1.2 (2025-01-10)");
             Console.WriteLine("");
 
             try
